@@ -249,7 +249,7 @@ function googleMapGenerator(h) {
       K = "",
       J = "";
     if (x.key) {
-      E = "&amp;key=" + "x.key"
+      E = "&key=" + "x.key"
     }
     if (x.styles) {
       J = k()
