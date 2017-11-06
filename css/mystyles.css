@@ -200,12 +200,14 @@ header img {
 }
 
 .navbar-brand {
-  padding: 0px !important;
+  width: 80%;
+  padding: 0px 0px;
 }
 
 .navbar-brand>img {
-  height: 100% !important;
-  width: auto !important;
+  width: 100%;
+  margin-left: 10%;
+  height: 100%:
 }
 
 section {
