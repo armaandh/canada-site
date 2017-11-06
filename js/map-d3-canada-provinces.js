@@ -23,7 +23,7 @@ d3.select(window).on("resize", resize);
 var svg = d3.select("#viz").append("svg").attr("width", width).attr("height", height).call(zoom),
   path = d3.geo.path().projection(projection),
   features = svg.append("g");
-d3.json("../public/assets/js/json/canada-topojson.json", function (t, e) {
+d3.json("http://armaandh.github.io/canada-site/public/assets/js/json/canada-topojson.json", function (t, e) {
   if (t) return console.error(t);
   topojson.feature(e, e.objects.canada);
   features.selectAll("path").data(topojson.feature(e, e.objects.canada).features).enter().append("path").attr("d", path).attr("fill", "#e8d8c3").attr("stroke", "#404040").attr("stroke-width", .45).on("mousemove", function (t) {
