@@ -14,8 +14,8 @@
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/mystyles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/tooltip-d3-js-map.css">
+    <link href="public/css/mystyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/tooltip-d3-js-map.css">
 
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -69,48 +69,39 @@
             </div>
             <div class="row">
                 <div class="col-lg-3">
-                    <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
-                        <div class="imagebox">
-                            <a href="#">
-                                <img src="img/quebec.png" class="category-banner img-responsive">
-                                <span class="imagebox-desc img-responsive img-rounded">Visit Quebec</span>
-                            </a>
-                        </div>
-                    </a>
+                    <div class="imagebox">
+                        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
+                            <img src="public/img/quebec.png" alt="quebec" class="category-banner img-responsive">
+                            <span class="imagebox-desc img-responsive img-rounded">Visit Quebec</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="col-lg-3">
-                    <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
-                        <div class="imagebox">
-                            <a href="#">
-                                <img src="img/olympics.png" style="margin-top: 25px" class="category-banner img-responsive">
-                                <span class="imagebox-desc img-responsive img-rounded">Canada at PyeongChang Olympics</span>
-                            </a>
-                        </div>
-                    </a>
+                    <div class="imagebox">
+                        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
+                            <img src="public/img/olympics.png" alt="olympics" style="margin-top: 25px" class="category-banner img-responsive">
+                            <span class="imagebox-desc img-responsive img-rounded">Canada at PyeongChang Olympics</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="col-lg-3">
-                    <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
-                        <div class="imagebox">
-                            <a href="#">
-                                <img src="img/lakelouise.png" class="category-banner img-responsive">
-                                <span class="imagebox-desc img-responsive img-rounded">Visit Lake Louise</span>
-                            </a>
-                        </div>
-                    </a>
-
+                    <div class="imagebox">
+                        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
+                            <img src="public/img/lakelouise.png" alt="lake" class="category-banner img-responsive">
+                            <span class="imagebox-desc img-responsive img-rounded">Visit Lake Louise</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="col-lg-3">
-                    <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
-                        <div class="imagebox">
-                            <a href="#">
-                                <img src="img/vancouver.png" class="category-banner img-responsive">
-                                <span class="imagebox-desc img-responsive img-rounded">Weekend in Vancouver</span>
-                            </a>
-                        </div>
-                    </a>
+                    <div class="imagebox">
+                        <a href="https://en.wikipedia.org/wiki/Lorem_ipsum">
+                            <img src="public/img/vancouver.png" alt="vancouver" class="category-banner img-responsive">
+                            <span class="imagebox-desc img-responsive img-rounded">Weekend in Vancouver</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,33 +158,29 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
 
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form id="contactForm" novalidate>
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-12">
                                 <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
+                                <input type="text" class="form-control" placeholder="Name" id="name">
                             </div>
                         </div>
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-12">
                                 <label>Email Address</label>
                                 <input type="email" class="form-control" placeholder="Email Address" id="email">
-                                <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-12">
                                 <label>Phone Number</label>
                                 <input type="tel" class="form-control" placeholder="Phone Number" id="phone">
-                                <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <div class="form-group col-xs-12">
                                 <label>Message</label>
                                 <textarea rows="5" class="form-control" placeholder="Message" id="message"></textarea>
-                                <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
@@ -236,12 +223,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
 
-    <script src="js/scroll.js"></script>
+    <script src="public/js/scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
     <script src="//d3js.org/topojson.v1.min.js"></script>
 
 
-    <script src="js/map-d3-canada-provinces.js"></script>
+    <script src="public/js/map-d3-canada-provinces.js"></script>
 
 </body>
 
