@@ -7,6 +7,16 @@ p {
   font-size: 20px;
 }
 
+*::-moz-selection {
+  color: #FAFAFA;
+  background: #607D8B;
+}
+
+*::selection {
+  color: #FAFAFA;
+  background: #607D8B;
+}
+
 p.small {
   font-size: 16px;
 }
@@ -125,7 +135,7 @@ header img {
 }
 
 .navbar-custom .navbar-brand {
-  color: white;
+  color: #D9272D;
 }
 
 .navbar-custom .navbar-nav {
@@ -199,17 +209,6 @@ header img {
   }
 }
 
-.navbar-brand {
-  width: 80%;
-  padding: 0px 0px;
-}
-
-.navbar-brand>img {
-  width: 100%;
-  margin-left: 10%;
-  height: 100%:
-}
-
 section {
   padding: 100px 0;
 }
@@ -269,4 +268,41 @@ footer .footer-below {
 
 .scroll-top .btn:focus {
   outline: none;
+}
+
+.imagebox {
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.img-rounded {
+  border-radius: 46px;
+}
+
+.imagebox img {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+
+.imagebox .imagebox-desc {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0px;
+  color: white;
+  font-size: 1.2em;
+  left: 0px;
+  padding: 10px 15px;
+  position: absolute;
+  transition: 0.5s padding;
+  text-align: center;
+  width: 100%;
+}
+
+.imagebox:hover img {
+  opacity: 0.7;
+}
+
+.imagebox:hover .imagebox-desc {
+  padding-bottom: 10%;
 }
