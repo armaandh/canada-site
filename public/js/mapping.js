@@ -249,7 +249,7 @@ function googleMapGenerator(h) {
       K = "",
       J = "";
     if (x.key) {
-      E = "&amp;key=" + "AIzaSyCYrplBRlyjWuzdToDx-7oBhoigENswrVs"
+      E = "&amp;key=" + "x.key"
     }
     if (x.styles) {
       J = k()
@@ -411,7 +411,7 @@ googleMapGenerator.options = {
   printClass: "map__print",
   legendClass: "map__legend",
   mapDynamicClass: "gm-style",
-  apiKey: "",
+  apiKey: "AIzaSyCYrplBRlyjWuzdToDx-7oBhoigENswrVs",
   legend: null,
   print: null,
   mapLat: -33.85,
