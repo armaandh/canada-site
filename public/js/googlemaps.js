@@ -690,7 +690,7 @@ googleMapGenerator.options = {
   printClass: 'map__print',
   legendClass: 'map__legend',
   mapDynamicClass: 'gm-style',
-  apiKey: null,
+  apiKey: 'AIzaSyDSJZ1augIYvlfKSf0o_2LkejwlYTLIRoo',
   legend: null,
   print: null,
   mapLat: -33.85,
