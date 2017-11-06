@@ -321,7 +321,7 @@ function googleMapGenerator(h) {
     return x.markerIconLabel
   }
 
-  function m() { /* Remove this function - document.write conflict on Codepen*/ /*var D=window.open("","mapWin","width=640,height=640");D.focus();D.document.write("<style>body { margin:0 } img { width: 100%; height: auto; } .map__legend ul { padding: 0; margin: 1.5em 0 0; } .map__legend ul li { float: left; width: 50%; list-style: none; margin: 0 0 1em; font: 12px sans-serif; }</style>"+y()+v()+"<script>setTimeout(function () { window.focus(); window.print(); }, 1500);<\/script>");D.document.close();return D*/ }
+  function m() {}
 
   function w(M, L) {
     var O, F, D, E, J, K, I = arguments[0] || {},
@@ -411,7 +411,7 @@ googleMapGenerator.options = {
   printClass: "map__print",
   legendClass: "map__legend",
   mapDynamicClass: "gm-style",
-  apiKey: null,
+  apiKey: "AIzaSyD8zGCmWo3UAqmZf4N5QanrRIPPAsbVd9M",
   legend: null,
   print: null,
   mapLat: -33.85,
