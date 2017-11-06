@@ -509,8 +509,8 @@ function googleMapGenerator(options) {
     googleMapGenerator.options.markerLoad = 'load';
 
     script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' + 'callback=googleMapGenerator';
-
+    script.src = 'https://maps.googleapis.com/maps/api/js?' + 'key=AIzaSyBdL1CAVuEViKjNBrJhkRJjFqdcP3O-8p4&' + 'callback=googleMapGenerator';
+    // https://maps.googleapis.com/maps/api/js?key=AIzaSyBdL1CAVuEViKjNBrJhkRJjFqdcP3O-8p4&callback=initMap
     return document.body.appendChild(script);
   }
 
@@ -691,7 +691,7 @@ googleMapGenerator.options = {
   printClass: 'map__print',
   legendClass: 'map__legend',
   mapDynamicClass: 'gm-style',
-  apiKey: 'AIzaSyBdL1CAVuEViKjNBrJhkRJjFqdcP3O-8p4',
+  apiKey: '',
   legend: null,
   print: null,
   mapLat: -33.85,
