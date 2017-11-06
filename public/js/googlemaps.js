@@ -201,7 +201,7 @@ function googleMapGenerator(options) {
 
   function addGoogleMapStaticStyle() {
     var mapStyles = '',
-        mapStylesLen = settings.styles.length;
+      mapStylesLen = settings.styles.length;
 
     for (var i = 0; i < mapStylesLen; i++) {
       mapStyles += '&amp;style=feature:' + settings.styles[i].featureType + '%7Celement:' + settings.styles[i].elementType;
@@ -231,7 +231,7 @@ function googleMapGenerator(options) {
 
     // Google Maps API not fully initialised
     if (!hasGoogleMapsJS()) {
-        return false;
+      return false;
     }
 
     // Markers already added
@@ -295,12 +295,12 @@ function googleMapGenerator(options) {
       }
 
       if (settings.hasInfoWindow) {
-        google.maps.event.addListener(marker, 'click', function() {
+        google.maps.event.addListener(marker, 'click', function () {
           infowindow.setContent(this.html);
           infowindow.open(map, this);
         });
 
-        google.maps.event.addListener(map, 'click', function() {
+        google.maps.event.addListener(map, 'click', function () {
           infowindow.close(map, this);
         });
       }
@@ -312,7 +312,7 @@ function googleMapGenerator(options) {
 
       for (var i = 0; i < legendItemsLen; i++) {
         (function (index) {
-          legendItems[i].onclick = function(e) {
+          legendItems[i].onclick = function (e) {
             e.preventDefault();
             google.maps.event.trigger(markers[index], 'click');
           }
@@ -370,7 +370,7 @@ function googleMapGenerator(options) {
 
     settings.print = getChildByClass(container, settings.printClass);
 
-    settings.print.onclick = function() {
+    settings.print.onclick = function () {
       printGoogleMap();
 
       return false;
@@ -396,7 +396,7 @@ function googleMapGenerator(options) {
   function generateGoogleMapStatic(width, height) {
     var width = width || 640,
       height = height || 640,
-      mapApiKey = '',
+      mapApiKey = 'AIzaSyDSJZ1augIYvlfKSf0o_2LkejwlYTLIRoo',
       mapStatic = '',
       mapLegend = '',
       mapUrl = 'http://maps.googleapis.com/maps/api/staticmap?',
@@ -434,7 +434,7 @@ function googleMapGenerator(options) {
   function eventsGoogleMapStatic() {
     var mapFrame = document.querySelectorAll('.' + settings.frameClass)[0];
 
-    mapFrame.onclick = function(e) {
+    mapFrame.onclick = function (e) {
       if (!hasGoogleMapDynamic()) {
         resizeGoogleMapFrame();
         loadGoogleMapJs();
@@ -490,7 +490,7 @@ function googleMapGenerator(options) {
     var center = map.getCenter();
 
     google.maps.event.trigger(map, 'resize');
-    
+
     return map.setCenter(center);
   }
 
