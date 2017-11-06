@@ -423,7 +423,8 @@ function googleMapGenerator(options) {
 
     // Map
     mapStatic = '<div class="' + settings.frameClass + '"><img style="-webkit-user-select: none" src="' + mapUrl + mapLocation + mapZoom + mapApiKey + mapSize + mapMarkers + mapStyles + '"></div>';
-
+    mapApiKey = '&amp;key=' + settings.key;
+    console.log(mapApiKey);
     return mapStatic;
   }
 
