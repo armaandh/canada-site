@@ -379,6 +379,7 @@ function googleMapGenerator(h) {
     }
     return I
   }
+
   return {
     init: u,
     onWindowResize: f,
@@ -411,7 +412,7 @@ googleMapGenerator.options = {
   printClass: "map__print",
   legendClass: "map__legend",
   mapDynamicClass: "gm-style",
-  apiKey: "AIzaSyCYrplBRlyjWuzdToDx-7oBhoigENswrVs",
+  apiKey: "AIzaSyBdL1CAVuEViKjNBrJhkRJjFqdcP3O-8p4",
   legend: null,
   print: null,
   mapLat: -33.85,

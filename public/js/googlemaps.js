@@ -396,7 +396,7 @@ function googleMapGenerator(options) {
   function generateGoogleMapStatic(width, height) {
     var width = width || 640,
       height = height || 640,
-      mapApiKey = 'AIzaSyDSJZ1augIYvlfKSf0o_2LkejwlYTLIRoo',
+      mapApiKey = 'AIzaSyBdL1CAVuEViKjNBrJhkRJjFqdcP3O-8p4',
       mapStatic = '',
       mapLegend = '',
       mapUrl = 'https://maps.googleapis.com/maps/api/staticmap?',
@@ -691,7 +691,7 @@ googleMapGenerator.options = {
   printClass: 'map__print',
   legendClass: 'map__legend',
   mapDynamicClass: 'gm-style',
-  apiKey: 'AIzaSyDSJZ1augIYvlfKSf0o_2LkejwlYTLIRoo',
+  apiKey: 'AIzaSyBdL1CAVuEViKjNBrJhkRJjFqdcP3O-8p4',
   legend: null,
   print: null,
   mapLat: -33.85,
