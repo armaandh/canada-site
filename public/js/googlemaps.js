@@ -270,7 +270,7 @@ function googleMapGenerator(options) {
             url: location[6]
           };
         } else {
-          settings.markerIcon = 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + getGoogleMapMarkerLabel(i) + '|' + settings.markerIconHexBackground + '|' + settings.markerIconHexColor;
+          settings.markerIcon = 'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + getGoogleMapMarkerLabel(i) + '|' + settings.markerIconHexBackground + '|' + settings.markerIconHexColor;
         }
       }
 
@@ -399,7 +399,7 @@ function googleMapGenerator(options) {
       mapApiKey = 'AIzaSyDSJZ1augIYvlfKSf0o_2LkejwlYTLIRoo',
       mapStatic = '',
       mapLegend = '',
-      mapUrl = 'http://maps.googleapis.com/maps/api/staticmap?',
+      mapUrl = 'https://maps.googleapis.com/maps/api/staticmap?',
       mapLocation = 'center=' + settings.mapLat + ',' + settings.mapLng,
       mapSize = '&amp;size=' + width + 'x' + height,
       mapZoom = '&amp;zoom=' + settings.mapZoom,
